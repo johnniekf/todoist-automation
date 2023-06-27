@@ -1,6 +1,10 @@
 <p align="center">
   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fcyberpunklibrarian.com%2Fwp-content%2Fuploads%2F2018%2F09%2Ftodoist-logo.png%3Fssl%3D1&f=1&nofb=1&ipt=cf22f01fd125522fb88cbe729d7dd7452e9ba43ee78040a7ef082f9017197389&ipo=images" width="150" title="hover text">
 </p>
+<h1 align="center"><b>+</b></h1>
+<p align="center">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fclipart.info%2Fimages%2Fccovers%2F1590430652red-youtube-logo-png-xl.png&f=1&nofb=1&ipt=16b90db86daaee1f4d2a1351d0356f2cc438577e539abccb182a64402244c64e&ipo=images" width="200" title="hover text">
+</p>
 
 <h3>ToDoist Youtube tracker</h3>
 <p>
