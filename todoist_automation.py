@@ -12,7 +12,6 @@ yt_key = data['yt_api']
 tdist_key = data['todoist_api']
 sheet_id = data['sheet_id']
 
-# TODO: Check cells for data and add to an array
 # Define the range of cells to read
 range_name = 'Sheet1!A1:A'
 
@@ -22,23 +21,7 @@ result = service.spreadsheets().values().get(
     spreadsheetId=sheet_id, range=range_name).execute()
 values = result.get('values', [])
 
-# # Define an empty array to store the IDs
-# ids = []
-
-# # Loop through the values and add any non-blank cells to the array
-# for row in values:
-#     if row:
-#         ids.append(row[0])
-#     else:
-#         break
-
-# # Print the array of IDs
-# print(ids)
-
-# Get the channel ID from the cell value
-# channel_id = cell_value.strip()
-# print(channel_id)
-
+# Define the main function
 def main(channel_id):
     api_service_name = "youtube"
     api_version = "v3"
@@ -54,8 +37,7 @@ def main(channel_id):
     day_ago = now - datetime.timedelta(days=1)
     
     day_ago_str = day_ago.isoformat() + 'Z'
-
-    # Todo: Add multi-search and get video IDs from Google Sheets
+    
     request = youtube.search().list(
         part="snippet",
         channelId=channel_id,
@@ -67,7 +49,6 @@ def main(channel_id):
     # Get the response from the YouTube API
     response = request.execute()
     
-    # Todo: Add a check to see if the video has already been added to Todoist
     # Extract the title and URL of each video from the response
     for item in response['items']:
         title = item['snippet']['title']
@@ -91,9 +72,5 @@ for row in values:
     else:
         break
 
-# print(ids)
-
-# TODO: Add as a loop depending on sheets data
 for id in ids:
     main(id)
-    # print(id)
