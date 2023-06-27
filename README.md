@@ -2,10 +2,10 @@
   <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fcyberpunklibrarian.com%2Fwp-content%2Fuploads%2F2018%2F09%2Ftodoist-logo.png%3Fssl%3D1&f=1&nofb=1&ipt=cf22f01fd125522fb88cbe729d7dd7452e9ba43ee78040a7ef082f9017197389&ipo=images" width="150" title="hover text">
 </p>
 
-<h3>ToDoist Automation - Python</h3>
+<h3>ToDoist Youtube tracker</h3>
 <p>
-  This is a project to get used to using API's, and solve an issue I have with ToDoist/Youtube.
-
-  There are Youtubers I want to watch more in certain times (i.e. someone has a cool project that is ongoing that I don't want to miss in my subscription box that's gathered over 10+ years of use)
-  So, where better to get notified than within my ToDo app? This script aims to take Youtubers I've listed and add their latest uploads with hyperlinks to my tasks for the day, overtime I plan to update this to make it more user friendly (add usernamers through todoist to get pulled and add tasks at time of upload using subhub)
+  Simple python script using Google and Todoist API's to take a list of Youtube channel ID's from a Google Sheet and checked for videos uploaded in a 24hr timeframe then hyperlink any new videos as individual tasks on ToDoist labeled by the content creator.
+<br><br>
+  This project was made due to me occasionally wanting to closely follow certain content creator's series on a more direct basis due to Youtube's algorithm not always showing me new uploads by certain users.<br><br>
+  This project can also be expanded to add filters for certain keywords in video titles (I.e. "Series X Ep:") to filter the content even more.
 </p>
