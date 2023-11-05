@@ -56,7 +56,7 @@ def main(channel_id):
         author = item['snippet']['channelTitle']
         url = f'https://www.youtube.com/watch?v={video_id}'
         try:
-            task = api.add_task(content=f'[{title}]({url})', labels=[f'{author}'])
+            task = api.add_task(content=f'[{title}]({url})', labels=[f'{author}', 'Youtube'])
             print(author + " - " + title)
         except Exception as error:
             print(error)
